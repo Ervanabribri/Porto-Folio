@@ -1,1 +1,1363 @@
+/* =========================================================
+   BRINDA CHENDJOU — PORTFOLIO
+   EXPERIENCE PAGE STYLES
+========================================================= */
 
+
+/* =========================================================
+   01. EXPERIENCE HERO
+========================================================= */
+
+.experience-hero {
+
+    position: relative;
+
+    width: min(
+        1320px,
+        calc(100% - 48px)
+    );
+
+    min-height: 520px;
+
+    margin: 25px auto 0;
+
+    display: flex;
+
+    align-items: center;
+
+    overflow: hidden;
+
+    border-radius: var(--border-radius-large);
+
+    background-color: var(--color-text);
+
+    color: var(--color-white);
+
+}
+
+
+.experience-hero::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 600px;
+
+    height: 600px;
+
+    right: -180px;
+
+    top: -250px;
+
+    border: 1px solid rgba(
+        249,
+        144,
+        245,
+        0.25
+    );
+
+    border-radius: 50%;
+
+}
+
+
+.experience-hero::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 400px;
+
+    height: 400px;
+
+    right: -80px;
+
+    bottom: -230px;
+
+    border-radius: 50%;
+
+    background-color: var(--color-primary);
+
+    opacity: 0.12;
+
+}
+
+
+.experience-hero-container {
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+
+.experience-hero .eyebrow {
+
+    color: var(--color-primary);
+
+}
+
+
+.experience-hero h1 {
+
+    max-width: 900px;
+
+    margin-top: 22px;
+
+    font-size: clamp(
+        3.5rem,
+        7vw,
+        6.5rem
+    );
+
+    line-height: 0.98;
+
+}
+
+
+.experience-hero h1 span {
+
+    color: var(--color-primary);
+
+}
+
+
+.experience-hero-description {
+
+    max-width: 650px;
+
+    margin-top: 30px;
+
+    color: rgba(
+        255,
+        255,
+        255,
+        0.68
+    );
+
+    font-size: 1rem;
+
+    line-height: 1.8;
+
+}
+
+
+/* =========================================================
+   02. EXPERIENCE OVERVIEW
+========================================================= */
+
+.experience-overview {
+
+    padding-top: 110px;
+
+    padding-bottom: 80px;
+
+}
+
+
+.experience-overview-header {
+
+    display: flex;
+
+    align-items: end;
+
+    justify-content: space-between;
+
+    gap: 60px;
+
+    margin-bottom: 60px;
+
+}
+
+
+.experience-overview-header h2 {
+
+    max-width: 700px;
+
+    font-size: clamp(
+        2.7rem,
+        5vw,
+        4rem
+    );
+
+}
+
+
+.experience-overview-header p {
+
+    max-width: 390px;
+
+    color: var(--color-text-secondary);
+
+    line-height: 1.8;
+
+}
+
+
+/* =========================================================
+   03. EXPERIENCE TIMELINE
+========================================================= */
+
+.experience-timeline {
+
+    position: relative;
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+
+/* Vertical line */
+
+.experience-timeline::before {
+
+    content: "";
+
+    position: absolute;
+
+    left: 145px;
+
+    top: 0;
+
+    bottom: 0;
+
+    width: 1px;
+
+    background-color: var(--color-border);
+
+}
+
+
+/* ---------- Experience item ---------- */
+
+.experience-item {
+
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns:
+        145px
+        1fr;
+
+    gap: 55px;
+
+    padding-bottom: 70px;
+
+}
+
+
+.experience-item:last-child {
+
+    padding-bottom: 0;
+
+}
+
+
+/* ---------- Date ---------- */
+
+.experience-date {
+
+    position: relative;
+
+    padding-top: 5px;
+
+    color: var(--color-text-secondary);
+
+    font-size: 0.72rem;
+
+    font-weight: 700;
+
+    line-height: 1.5;
+
+}
+
+
+.experience-date::after {
+
+    content: "";
+
+    position: absolute;
+
+    z-index: 2;
+
+    right: -61px;
+
+    top: 5px;
+
+    width: 11px;
+
+    height: 11px;
+
+    border: 3px solid var(--color-background);
+
+    border-radius: 50%;
+
+    background-color: var(--color-primary);
+
+}
+
+
+/* ---------- Main experience card ---------- */
+
+.experience-card {
+
+    position: relative;
+
+    padding: 38px;
+
+    border: 1px solid var(--color-border);
+
+    border-radius: var(--border-radius-large);
+
+    background-color: var(--color-white);
+
+    transition:
+        transform var(--transition-medium),
+        box-shadow var(--transition-medium),
+        border-color var(--transition-medium);
+
+}
+
+
+.experience-card:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow: var(--shadow-soft);
+
+    border-color: rgba(
+        214,
+        111,
+        208,
+        0.35
+    );
+
+}
+
+
+/* =========================================================
+   04. EXPERIENCE CARD HEADER
+========================================================= */
+
+.experience-card-header {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    justify-content: space-between;
+
+    gap: 30px;
+
+    padding-bottom: 28px;
+
+    border-bottom: 1px solid var(--color-border);
+
+}
+
+
+.experience-role {
+
+    margin-bottom: 8px;
+
+    font-size: clamp(
+        1.5rem,
+        3vw,
+        2.2rem
+    );
+
+}
+
+
+.experience-company {
+
+    color: var(--color-primary-dark);
+
+    font-size: 0.85rem;
+
+    font-weight: 700;
+
+}
+
+
+.experience-location {
+
+    margin-top: 5px;
+
+    color: var(--color-text-secondary);
+
+    font-size: 0.72rem;
+
+}
+
+
+/* ---------- Type badge ---------- */
+
+.experience-type {
+
+    flex-shrink: 0;
+
+    padding: 8px 13px;
+
+    border-radius: var(--border-radius-pill);
+
+    background-color: var(--color-primary-light);
+
+    color: var(--color-primary-dark);
+
+    font-size: 0.65rem;
+
+    font-weight: 800;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.08em;
+
+}
+
+
+/* =========================================================
+   05. EXPERIENCE DESCRIPTION
+========================================================= */
+
+.experience-description {
+
+    margin-top: 28px;
+
+    color: var(--color-text-secondary);
+
+    font-size: 0.92rem;
+
+    line-height: 1.8;
+
+}
+
+
+/* =========================================================
+   06. RESPONSIBILITIES
+========================================================= */
+
+.responsibilities {
+
+    margin-top: 30px;
+
+}
+
+
+.responsibilities-title {
+
+    margin-bottom: 18px;
+
+    color: var(--color-text);
+
+    font-size: 0.72rem;
+
+    font-weight: 800;
+
+    letter-spacing: 0.1em;
+
+    text-transform: uppercase;
+
+}
+
+
+.responsibility-list {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 12px 35px;
+
+}
+
+
+.responsibility-list li {
+
+    position: relative;
+
+    padding-left: 19px;
+
+    color: var(--color-text-secondary);
+
+    font-size: 0.82rem;
+
+    line-height: 1.6;
+
+}
+
+
+.responsibility-list li::before {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    top: 0.65em;
+
+    width: 6px;
+
+    height: 6px;
+
+    border-radius: 50%;
+
+    background-color: var(--color-primary);
+
+}
+
+
+/* =========================================================
+   07. TOOLS / TECHNOLOGIES
+========================================================= */
+
+.experience-tools {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 7px;
+
+    margin-top: 30px;
+
+    padding-top: 24px;
+
+    border-top: 1px solid var(--color-border);
+
+}
+
+
+.experience-tools span {
+
+    padding: 7px 12px;
+
+    border: 1px solid var(--color-border);
+
+    border-radius: var(--border-radius-pill);
+
+    color: var(--color-text-secondary);
+
+    font-size: 0.67rem;
+
+    font-weight: 600;
+
+    transition:
+        background-color var(--transition-fast),
+        border-color var(--transition-fast);
+
+}
+
+
+.experience-tools span:hover {
+
+    border-color: var(--color-primary);
+
+    background-color: var(--color-primary-light);
+
+}
+
+
+/* =========================================================
+   08. IMPACT / ACHIEVEMENT
+========================================================= */
+
+.experience-impact {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 15px;
+
+    margin-top: 28px;
+
+}
+
+
+.impact-card {
+
+    padding: 22px;
+
+    border-radius: var(--border-radius-medium);
+
+    background-color: var(--color-surface);
+
+}
+
+
+.impact-number {
+
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: var(--color-primary-dark);
+
+    font-family: var(--font-heading);
+
+    font-size: 1.6rem;
+
+    font-weight: 800;
+
+}
+
+
+.impact-card p {
+
+    color: var(--color-text-secondary);
+
+    font-size: 0.72rem;
+
+}
+
+
+/* =========================================================
+   09. FEATURED PROJECTS
+========================================================= */
+
+.projects-section {
+
+    padding-top: 110px;
+
+    padding-bottom: 120px;
+
+    background-color: var(--color-surface);
+
+}
+
+
+.projects-header {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 70px;
+
+    align-items: end;
+
+    margin-bottom: 60px;
+
+}
+
+
+.projects-header h2 {
+
+    font-size: clamp(
+        2.8rem,
+        5vw,
+        4.2rem
+    );
+
+}
+
+
+.projects-header p {
+
+    max-width: 450px;
+
+    color: var(--color-text-secondary);
+
+    line-height: 1.8;
+
+}
+
+
+/* ---------- Project grid ---------- */
+
+.projects-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 18px;
+
+}
+
+
+/* ---------- Project card ---------- */
+
+.project-card {
+
+    position: relative;
+
+    min-height: 360px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    overflow: hidden;
+
+    padding: 32px;
+
+    border: 1px solid var(--color-border);
+
+    border-radius: var(--border-radius-large);
+
+    background-color: var(--color-white);
+
+    transition:
+        transform var(--transition-medium),
+        box-shadow var(--transition-medium);
+
+}
+
+
+.project-card:hover {
+
+    transform: translateY(-7px);
+
+    box-shadow: var(--shadow-soft);
+
+}
+
+
+.project-card-featured {
+
+    background-color: var(--color-primary);
+
+    border-color: var(--color-primary);
+
+}
+
+
+.project-number {
+
+    color: var(--color-primary-dark);
+
+    font-size: 0.68rem;
+
+    font-weight: 800;
+
+    letter-spacing: 0.12em;
+
+}
+
+
+.project-card-featured .project-number {
+
+    color: rgba(
+        37,
+        33,
+        41,
+        0.65
+    );
+
+}
+
+
+.project-card h3 {
+
+    max-width: 550px;
+
+    margin-top: auto;
+
+    margin-bottom: 14px;
+
+    font-size: clamp(
+        2rem,
+        4vw,
+        3rem
+    );
+
+}
+
+
+.project-card p {
+
+    max-width: 500px;
+
+    color: var(--color-text-secondary);
+
+    font-size: 0.82rem;
+
+    line-height: 1.7;
+
+}
+
+
+.project-card-featured p {
+
+    color: rgba(
+        37,
+        33,
+        41,
+        0.7
+    );
+
+}
+
+
+/* ---------- Project tags ---------- */
+
+.project-tags {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 7px;
+
+    margin-top: 25px;
+
+}
+
+
+.project-tags span {
+
+    padding: 7px 11px;
+
+    border: 1px solid var(--color-border);
+
+    border-radius: var(--border-radius-pill);
+
+    color: var(--color-text-secondary);
+
+    font-size: 0.65rem;
+
+}
+
+
+.project-card-featured .project-tags span {
+
+    border-color: rgba(
+        37,
+        33,
+        41,
+        0.2
+    );
+
+    color: var(--color-text);
+
+}
+
+
+/* =========================================================
+   10. PROJECT LINK
+========================================================= */
+
+.project-link {
+
+    position: absolute;
+
+    top: 28px;
+
+    right: 28px;
+
+    width: 45px;
+
+    height: 45px;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 50%;
+
+    background-color: var(--color-text);
+
+    color: var(--color-white);
+
+    font-size: 1rem;
+
+    transition:
+        transform var(--transition-medium);
+
+}
+
+
+.project-link:hover {
+
+    transform:
+        translateY(-3px)
+        rotate(8deg);
+
+}
+
+
+/* =========================================================
+   11. EXPERIENCE SUMMARY
+========================================================= */
+
+.experience-summary {
+
+    padding-top: 110px;
+
+    padding-bottom: 110px;
+
+}
+
+
+.summary-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    border-top: 1px solid var(--color-border);
+
+    border-bottom: 1px solid var(--color-border);
+
+}
+
+
+.summary-item {
+
+    min-height: 190px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    padding: 25px;
+
+    border-right: 1px solid var(--color-border);
+
+}
+
+
+.summary-item:last-child {
+
+    border-right: none;
+
+}
+
+
+.summary-value {
+
+    color: var(--color-primary-dark);
+
+    font-family: var(--font-heading);
+
+    font-size: clamp(
+        2.5rem,
+        5vw,
+        4rem
+    );
+
+    font-weight: 800;
+
+    line-height: 1;
+
+}
+
+
+.summary-label {
+
+    margin-top: 10px;
+
+    color: var(--color-text-secondary);
+
+    font-size: 0.75rem;
+
+}
+
+
+/* =========================================================
+   12. EXPERIENCE CTA
+========================================================= */
+
+.experience-cta {
+
+    padding: 120px 0;
+
+    background-color: var(--color-primary-light);
+
+}
+
+
+.experience-cta-container {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 60px;
+
+}
+
+
+.experience-cta h2 {
+
+    max-width: 750px;
+
+    font-size: clamp(
+        3rem,
+        6vw,
+        5rem
+    );
+
+}
+
+
+.experience-cta h2 span {
+
+    color: var(--color-primary-dark);
+
+}
+
+
+.experience-cta-button {
+
+    width: 95px;
+
+    height: 95px;
+
+    flex-shrink: 0;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 50%;
+
+    background-color: var(--color-text);
+
+    color: var(--color-white);
+
+    font-size: 1.7rem;
+
+    transition:
+        transform var(--transition-medium),
+        box-shadow var(--transition-medium);
+
+}
+
+
+.experience-cta-button:hover {
+
+    transform:
+        translateY(-5px)
+        rotate(8deg);
+
+    box-shadow: var(--shadow-soft);
+
+}
+
+
+/* =========================================================
+   13. TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+
+    /* ---------- Hero ---------- */
+
+    .experience-hero {
+
+        width: calc(100% - 32px);
+
+        min-height: 500px;
+
+    }
+
+
+    /* ---------- Overview ---------- */
+
+    .experience-overview-header {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 25px;
+
+    }
+
+
+    /* ---------- Timeline ---------- */
+
+    .experience-timeline::before {
+
+        left: 8px;
+
+    }
+
+
+    .experience-item {
+
+        grid-template-columns:
+            30px
+            1fr;
+
+        gap: 25px;
+
+    }
+
+
+    .experience-date {
+
+        font-size: 0;
+
+    }
+
+
+    .experience-date::before {
+
+        content: "";
+
+        display: block;
+
+        width: 17px;
+
+        height: 17px;
+
+        border-radius: 50%;
+
+        background-color: var(--color-primary);
+
+    }
+
+
+    .experience-date::after {
+
+        display: none;
+
+    }
+
+
+    /* ---------- Projects ---------- */
+
+    .projects-header {
+
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+
+    }
+
+
+    /* ---------- Summary ---------- */
+
+    .summary-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .summary-item {
+
+        min-height: 150px;
+
+        border-right: none;
+
+        border-bottom: 1px solid var(--color-border);
+
+    }
+
+
+    .summary-item:last-child {
+
+        border-bottom: none;
+
+    }
+
+
+    /* ---------- CTA ---------- */
+
+    .experience-cta-container {
+
+        align-items: flex-start;
+
+        flex-direction: column;
+
+    }
+
+}
+
+
+/* =========================================================
+   14. MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+
+    /* ---------- Hero ---------- */
+
+    .experience-hero {
+
+        width: calc(100% - 24px);
+
+        min-height: 540px;
+
+        margin-top: 12px;
+
+        border-radius: 25px;
+
+    }
+
+
+    .experience-hero h1 {
+
+        font-size: clamp(
+            3rem,
+            13vw,
+            4.3rem
+        );
+
+    }
+
+
+    .experience-hero-description {
+
+        font-size: 0.88rem;
+
+    }
+
+
+    /* ---------- Timeline ---------- */
+
+    .experience-overview {
+
+        padding-top: 80px;
+
+        padding-bottom: 60px;
+
+    }
+
+
+    .experience-item {
+
+        grid-template-columns: 22px 1fr;
+
+        gap: 18px;
+
+        padding-bottom: 40px;
+
+    }
+
+
+    .experience-timeline::before {
+
+        left: 6px;
+
+    }
+
+
+    .experience-date::before {
+
+        width: 13px;
+
+        height: 13px;
+
+    }
+
+
+    .experience-card {
+
+        padding: 25px;
+
+        border-radius: 22px;
+
+    }
+
+
+    .experience-card-header {
+
+        flex-direction: column;
+
+        gap: 15px;
+
+    }
+
+
+    .experience-type {
+
+        width: fit-content;
+
+    }
+
+
+    .responsibility-list {
+
+        grid-template-columns: 1fr;
+
+        gap: 10px;
+
+    }
+
+
+    .experience-impact {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    /* ---------- Projects ---------- */
+
+    .projects-section {
+
+        padding-top: 80px;
+
+        padding-bottom: 85px;
+
+    }
+
+
+    .projects-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .project-card {
+
+        min-height: 330px;
+
+        padding: 27px;
+
+    }
+
+
+    /* ---------- Summary ---------- */
+
+    .experience-summary {
+
+        padding-top: 80px;
+
+        padding-bottom: 80px;
+
+    }
+
+
+    /* ---------- CTA ---------- */
+
+    .experience-cta {
+
+        padding: 85px 0;
+
+    }
+
+
+    .experience-cta-button {
+
+        width: 75px;
+
+        height: 75px;
+
+    }
+
+}
