@@ -1,1 +1,116 @@
+#Phase1: project Documentation 
+
+docs/
+│
+├── 01_Project_Overview.md
+├── 02_Architecture.md
+├── 03_UI_Design.md
+├── 04_Color_System.md
+├── 05_Components.md
+├── 06_Animations.md
+├── 07_Deployment.md
+├── 08_Maintenance.md
+└── 09_Changelog.md
+├── 10_Development_Guidelines.md
+└── 11_Future_Improvements.md
+
+#Phase2: Complete the code
+
+portfolio/
+│
+├── index.html                ✅
+├── experience.html           ⏳
+│
+├── css/
+│   ├── main.css             ✅
+│   ├── profile.css          ✅
+│   └── experience.css       ✅
+│
+├── js/
+│   ├── animations.js        ✅
+│   ├── main.js              ⏳
+│   └── experience.js        ⏳
+│
+├── assets/
+│
+└── docs/
+
+#Phase3: Add Your Actual Information
+
+my summary
+my degrees
+my work experience
+my projects
+my skills
+my languages
+my interests
+
+profile.jpg
+
+CV.pdf
+
+logo.png
+
+favicon.ico
+
+icônes SVG
+
+#Phase4: Optimisation
+
+meta description
+
+Open Graph
+
+Twitter Card
+
+favicon
+
+robots.txt
+
+sitemap.xml
+
+
+
+
+#Phase5: Resume
+Phase 1
+──────────────
+✔ Documentation
+
+Phase 2
+──────────────
+✔ index.html
+✔ main.css
+✔ profile.css
+✔ animations.js
+⬜ main.js
+⬜ experience.html
+⬜ experience.js
+
+Phase 3
+──────────────
+⬜ Remplir avec ton CV réel
+
+Phase 4
+──────────────
+⬜ SEO
+⬜ Responsive
+⬜ Performance
+⬜ Accessibility
+
+Phase 5
+──────────────
+⬜ Tests
+
+Phase 6
+──────────────
+⬜ GitHub
+
+Phase 7
+──────────────
+⬜ GitHub Pages
+
+Phase 8
+──────────────
+⬜ Maintenance
 
